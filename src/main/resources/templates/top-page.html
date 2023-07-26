@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <title>TopPage</title>
+  </head>
+  <body>
+    	<header>
+		<div id=pagetop>
+		<page-top-vue></page-top-vue>
+		</div>
+	</header>
+	
+	<hr class="tophr">
+	<hr class="underhr">
+	<main>
+	<div class="top-text">検索する方法を選択してください</div>
+	<div class="select-img">
+	 <a class="flex-img" href="/search-by-address"><img class="city-img"  src="/img/station-city-img/city.jpg"></a>
+	 <a class="flex-img" href="/station/search"><img class="station-img" src="/img/station-city-img/station.jpg"></a>
+	 </div>
+	     </main>
+      	<footer>
+		<div id=pageend>
+			<page-end-vue></page-end-vue>
+		</div>
+	</footer>
+
+    <!-- script -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@3.3.4/dist/vue.global.min.js"></script>
+<script src="https://unpkg.com/vuex@4"></script>
+<script src="/js/vue/template.vue"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script th:src="@{/js/searchByAddress.js}"></script>
+    <link rel="stylesheet" th:href="@{/css/header.css}" />
+    <link rel="stylesheet" th:href="@{/css/top-page.css}" />
+
+  </body>
+</html>

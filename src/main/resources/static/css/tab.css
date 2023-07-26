@@ -1,0 +1,264 @@
+.tab_wrap {
+  width: 95%;
+  height: 60%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+#option-style input[type="radio"] {
+  display: none;
+}
+
+.tab_area {
+  width: 100%;
+  height: 50px;
+  overflow-x: scroll;
+  white-space: nowrap;
+  display: flex;
+}
+
+.tab_area::-webkit-scrollbar {
+  height:10px;
+}
+
+.tab_area::-webkit-scrollbar-track{
+   background-color: #ccc;
+}
+.tab_area::-webkit-scrollbar-thumb{
+   background-color: #17585d;
+}
+
+
+.tab_area label {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  	width:135px;
+	height:35px;
+  padding: 0 20px;
+  margin:0;
+  color: #999;
+  background: #ddd;
+  text-align: center;
+  font-size: 13px;
+  cursor: pointer;
+  transition: ease 0.2s opacity;
+}
+
+.tab_area label:hover {
+  opacity: 0.5;
+}
+
+.panel_area {
+  background: #fff;
+  height: calc(100% - 60px);
+  width: 100%;
+  overflow-y: auto;
+}
+
+.panel_area::-webkit-scrollbar {
+  display: none;
+}
+
+.tab_panel {
+  width: 95%;
+  padding: 15px;
+  display: none;
+}
+
+.tab_panel table {
+  text-align: center;
+}
+
+.tab_panel tr {
+  font-size: 24px;
+  height: 25px;
+  border: 2px solid black;
+}
+
+#rating_data th {
+  font-size: 24px;
+  height: 25px;
+  margin: 0 2.5%;
+}
+
+#rating_data td {
+  height: 40px;
+  letter-spacing: 1px;
+}
+
+#rating_data tr {
+  font-size: 24px;
+  height: 50px;
+  border: 2px solid black;
+  margin-top: 4%;
+}
+
+.seach-panel th {
+  font-size: 24px;
+  width: 50%;
+  height: 25px;
+  margin: 0 2.5%;
+}
+
+.seach-panel td {
+  width: 50%;
+  height: 25px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+#panel12{
+	  font-size: 30px;
+	  letter-spacing: 1px;
+	   font-weight: 700;
+}
+
+.original_panel {
+	width: 100%;;
+ text-align: left;
+  margin: 150px 0 auto 0;
+  font-size: 34px;
+ font-weight: 700;
+}
+
+#tab1:checked ~ .tab_area .tab1_label,
+#tab2:checked ~ .tab_area .tab2_label,
+#tab3:checked ~ .tab_area .tab3_label,
+#tab4:checked ~ .tab_area .tab4_label,
+#tab5:checked ~ .tab_area .tab5_label,
+#tab6:checked ~ .tab_area .tab6_label,
+#tab7:checked ~ .tab_area .tab7_label,
+#tab8:checked ~ .tab_area .tab8_label,
+#tab9:checked ~ .tab_area .tab9_label,
+#tab10:checked ~ .tab_area .tab10_label,
+#tab11:checked ~ .tab_area .tab11_label,
+#tab12:checked ~ .tab_area .tab12_label,
+#tab13:checked ~ .tab_area .tab13_label{
+  background: #fff;
+  color: #000;
+}
+
+#tab1:checked ~ .panel_area #panel1,
+#tab2:checked ~ .panel_area #panel2,
+#tab3:checked ~ .panel_area #panel3,
+#tab4:checked ~ .panel_area #panel4,
+#tab5:checked ~ .panel_area #panel5,
+#tab6:checked ~ .panel_area #panel6,
+#tab7:checked ~ .panel_area #panel7,
+#tab8:checked ~ .panel_area #panel8,
+#tab9:checked ~ .panel_area #panel9,
+#tab10:checked ~ .panel_area #panel10,
+#tab11:checked ~ .panel_area #panel11,
+#tab12:checked ~ .panel_area #panel12,
+#tab13:checked ~ .panel_area #panel13{
+  display: block;
+}
+
+.rating{
+	display: flex;
+	width: 95%;
+font-size: 34px;
+ font-weight: 700;
+ margin-bottom: 5px;
+}
+.eval-img{
+	width: 200px;
+	height: 40px;
+	margin:2px 0 0 20px;
+	padding:0;
+}
+.panel_text{
+	height:100%;
+	width: 100%;
+}
+.rating-error {
+	width: 100%;;
+ text-align: center;
+  margin: 150px 0 auto 0;
+  font-size: 34px;
+ font-weight: 700;
+}
+
+#rating-data{
+	width: 100%;
+	height:90px;
+	display: flex;
+}
+
+.data1{
+	 flex: 0 0 10%;
+	   font-size: 25px;
+	 width: 5%;
+	 
+}
+.data2{
+	 flex: 0 0 20%;
+	 width:20%;
+	 font-size: 23px;
+	 margin-left:2%;
+}
+
+.data3{
+	 flex: 0 0 10%;
+	 width: 5%;
+	   font-size: 25px;
+	   margin-left:2%;
+}
+
+#rating_data_top tr{
+	padding-bottom: 2px;
+}
+#rating_data_top th {
+  border-bottom: 3px solid black;
+  border-spacing: 5px;
+  margin-bottom:10px;
+}
+
+#rating_data td {
+  border-bottom: 1px solid #ddd;
+  border-spacing: 5px;
+}
+
+#rating_data tr:last-child td {
+  border-bottom: 2px solid black;
+  border-spacing: 5px;
+}
+
+#rating_data tr:nth-child(even) {
+  background-color: #f9f9f9;
+  border-spacing: 5px;
+}
+
+.seach-panel-top th {
+  border-bottom: 3px solid black;
+  border-spacing: 5px;
+  margin-bottom:10px;
+     position: sticky;
+  top: 0;
+    background-color: #fff;
+}
+
+.seach-panel td {
+  border-bottom: 1px solid #ddd;
+  border-spacing: 5px;
+}
+
+.seach-panel tr:last-child td {
+  border-bottom: 2px solid black;
+  border-spacing: 5px;
+}
+
+.seach-panel tr:nth-child(even) {
+  background-color: #f9f9f9;
+  border-spacing: 5px;
+}
+
+.seach-panel {
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+
